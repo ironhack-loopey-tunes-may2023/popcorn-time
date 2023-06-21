@@ -12,8 +12,8 @@ function Main(props) {
     return (
         <div className="Main">
 
-            {props.listOfMovies.map((movieObj) => {
-                return <Movie key={movieObj.id} movieDetails={movieObj} callbackToDelete={props.callbackToDelete} />
+            {props.listOfMovies.map((movieObj, index) => {
+                return <Movie key={index} movieDetails={movieObj} callbackToDelete={props.callbackToDelete} />
             })}
 
         </div>

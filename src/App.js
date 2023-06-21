@@ -16,13 +16,13 @@ function App() {
   const [rating, setRating] = useState("");
 
   
-  const deleteMovie = (movieId) => {
-    console.log("deleting movie with id....", movieId)
+  const deleteMovie = (movieTitle) => {
+    console.log("deleting movie with id....", movieTitle)
 
     //moviesToDisplay.push(); // NEVER MODIFY STATE DIRECTLY !
 
     const newList = moviesToDisplay.filter((element) => {
-      return element.id !== movieId;
+      return element.title !== movieTitle;
     });
 
     setMoviesToDisplay(newList);

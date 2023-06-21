@@ -18,7 +18,7 @@ function Movie(props) {
             <p>
                 {/* <button onClick={() => { deleteMovie(props.movieDetails.id) }}>Delete this movie</button> */}
 
-                <button onClick={() => {props.callbackToDelete(props.movieDetails.id)}}>Delete this movie</button>
+                <button onClick={() => {props.callbackToDelete(props.movieDetails.title)}}>Delete this movie</button>
 
             </p>
         </div>
