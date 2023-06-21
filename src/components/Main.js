@@ -5,10 +5,6 @@ import "./Main.css";
 import Movie from "./Movie";
 
 function Main(props) {
-
-
-
-
     return (
         <div className="Main">
 
